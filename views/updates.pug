@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title Create a Record for Test Object
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Create a Record for Test Object
+        .form-wrapper
+            form(action="/update-cobj" method="POST")
+                label(for="test_id") Test ID:
+                input(type="text" name="test_id" id="test_id" required)
+                br
+                label(for="name") Name:
+                input(type="text" name="name" id="name" required)
+                br
+                label(for="bio") Bio:
+                input(type="text" name="bio" id="bio" required)
+                br
+                button(type="submit") Submit
+        br
+        a(href="/") Return to the homepage
